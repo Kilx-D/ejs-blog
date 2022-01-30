@@ -1,0 +1,14 @@
+<%- include("partials/header"); %>
+<h1>Home</h1>
+
+<p><%= homeText %></p>
+<hr>
+
+<% postCollection.forEach(x => { %>
+    <h1><%= x.title %></h1>
+    <p><%= x.body.substring(0, 100) %> . . . <a href="/posts/<%= x._id %>">Read More</a></p>
+    <p class="date"><%= x.creationDate %></p>
+    <hr>
+<% }) %>
+
+<%- include("partials/footer"); %>

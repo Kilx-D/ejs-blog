@@ -1,0 +1,11 @@
+<%- include("partials/header"); %>
+<!--maybe if you put random words and phrases, something will happen-->
+<h1>Compose</h1>
+<form action="/compose" method="post">
+    <label for="title" class="form-label">Title</label>
+    <input type="text" name="title" id="title" class="form-control" autocomplete="off">
+    <label for="post" class="form-label">Post</label>
+    <textarea name="post" id="post" cols="30" rows="10" class="form-control"></textarea>
+    <button type="submit" class="btn btn-primary">Publish</button>
+</form>
+<%- include("partials/footer"); %>
