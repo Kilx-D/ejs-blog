@@ -130,6 +130,9 @@ app.post("/compose", function (req, res) {
   if (postTitle == "hey sexy ;)") {
     res.redirect("/sexy");
     return 0;
+  } else if(postTitle == "terminator activated") {
+    res.redirect("https://www.youtube.com/watch?v=pS_yK1a91FA");
+    return 0;
   }
 
   //makes a new data object to show the date
