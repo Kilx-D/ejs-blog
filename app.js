@@ -10,7 +10,7 @@ const mongoose = require("mongoose");
 
 
 //connects to the database
-mongoose.connect("mongodb+srv://admin:FfQy7zlWgBwNovuq@cluster0.exe0u.mongodb.net/BlogDB");
+mongoose.connect("<database url>");
 
 //username: admin
 //password: FfQy7zlWgBwNovuq
