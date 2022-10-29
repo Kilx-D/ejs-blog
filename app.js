@@ -169,6 +169,6 @@ app.post("/compose", function (req, res) {
 
 
 //sets the server up to listen at port 3000
-app.listen(process.env.PORT, function () {
+app.listen(3050, function () {
   console.log("Server started");
 });
